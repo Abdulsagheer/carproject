@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ev)1@akb_kwyjkasz8e+t!fk%^*g17#2)swymx(ckqi189=7c*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["damp-springs-56935.herokuapp.com","tech-smash.co",'www.tech-smash.co']
-
+ALLOWED_HOSTS = []
+#"damp-springs-56935.herokuapp.com","tech-smash.co",'www.tech-smash.co'
 LOGIN_REDIRECT_URL='accounts:dashboard'
 
 
@@ -91,17 +91,19 @@ WSGI_APPLICATION = 'carproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-#DATABASES = {
-#    'default': {
-#        'ENGINE': 'django.db.backends.postgresql',
-#        'NAME': 'carzone_db',
-#        'USER':'postgres',
-#        'PASSWORD':'sagheer29',
-#        'HOST':'localhost',
-#    }
-#
-#}
-DATABASES = {'default': dj_database_url.config(default='postgres://postgres:sagheer29@localhost/carzone_db')}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'carzone_db',
+        'USER':'postgres',
+        'PASSWORD':'sagheer29',
+        'HOST':'localhost',
+   }
+
+
+}
+
+#DATABASES = {'default': dj_database_url.config(default='postgres://postgres:sagheer29@localhost/carzone_db')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
