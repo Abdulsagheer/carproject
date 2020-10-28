@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'ev)1@akb_kwyjkasz8e+t!fk%^*g17#2)swymx(ckqi189=7c*'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 #"damp-springs-56935.herokuapp.com","tech-smash.co",'www.tech-smash.co'
