@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 LOGIN_REDIRECT_URL='accounts:dashboard'
 
 
-# Application definition
+# Application definition   
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -91,19 +91,19 @@ WSGI_APPLICATION = 'carproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'carzone_db',
-        'USER':'postgres',
-        'PASSWORD':'sagheer29',
-        'HOST':'localhost',
-   }
+#DATABASES = {
+#    'default': {
+#        'ENGINE': 'django.db.backends.postgresql',
+#        'NAME': 'carzone_db',
+#        'USER':'postgres',
+#        'PASSWORD':'sagheer29',
+#        'HOST':'localhost',
+#   }
 
 
-}
+#}
 
-#DATABASES = {'default': dj_database_url.config(default='postgres://postgres:sagheer29@localhost/carzone_db')}
+DATABASES = {'default': dj_database_url.config(default='postgres://postgres:sagheer29@localhost/carzone_db')}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -164,7 +164,7 @@ SITE_ID = 1
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_HOST_USER='sagheersagheer9118@gmail.com'
-EMAIL_HOST_PASSWORD='sagheer@29'
+EMAIL_HOST_PASSWORD='sagheer@2901'
 EMAIL_USE_TLS=True
 
 STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
