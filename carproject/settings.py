@@ -27,8 +27,8 @@ SECRET_KEY = 'ev)1@akb_kwyjkasz8e+t!fk%^*g17#2)swymx(ckqi189=7c*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
-#"damp-springs-56935.herokuapp.com","tech-smash.co",'www.tech-smash.co'
+ALLOWED_HOSTS = ["damp-springs-56935.herokuapp.com","tech-smash.co",'www.tech-smash.co']
+
 LOGIN_REDIRECT_URL='accounts:dashboard'
 
 
