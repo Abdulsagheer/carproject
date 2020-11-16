@@ -134,6 +134,7 @@
                                             <ul>
                                                 {% for f in single_car.features %}
                                                 <li>
+                                                    {{forloop.counter}}
                                                     {{f}}
                                                 </li>
                                                 {% endfor %}
