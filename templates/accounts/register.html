@@ -64,13 +64,14 @@
                         <div class="extra-login clearfix">
                             <span>Or Login With</span>
                         </div>
-                        <div class="clearfix"></div>
+                        <div class="clearfix">
                         <ul class="social-list">
                             <li><a href="{% provider_login_url 'facebook' method='oauth2' %}" class="facebook-bg"><i class="fa fa-facebook facebook-i"></i><span>Facebook</span></a></li>
                             <li><a href="{% provider_login_url 'google' %}" class="google-bg"><i class="fa fa-google google-i"></i><span>Google</span></a></li>
                         </ul>
                     </form>
                     <p>Already a member? <a href="{% url 'accounts:login' %}" class="thembo"> Login here</a></p>
+                    </div>
                 </div>
             </div>
         </div>

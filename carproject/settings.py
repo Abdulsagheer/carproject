@@ -97,7 +97,7 @@ WSGI_APPLICATION = 'carproject.wsgi.application'
 #        'NAME': 'carzone_db',
 #        'USER':'postgres',
 #        'PASSWORD':'sagheer29',
-#        'HOST':'localhost',
+#        'HOST':'localhost', 
 #   }
 
 
